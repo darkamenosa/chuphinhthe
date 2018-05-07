@@ -13,118 +13,12 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
+    <link rel="stylesheet" href="css/custom.css">
 
     <link rel="icon" type="image/png" href="favicon.png">
 
-
-
     <title>Chụp hình thẻ - Trang chủ</title>
-    <style>
 
-
-      @font-face {
-        font-family: 'GothamPro';
-        src: url('fonts/GothamPro/GothamPro.otf')  format('opentype');
-        font-weight: normal;
-        font-style: normal;
-      }
-
-
-      @font-face {
-        font-family: 'GothamPro-Bold';
-        src: url('fonts/GothamPro-Bold/GothamPro-Bold.otf')  format('opentype');
-        font-weight: normal;
-        font-style: normal;
-      }
-
-      body {
-        background-color: #4A90E2;
-        padding: 0;
-        margin: 0;
-        color: white;
-      }
-
-      .icon {
-        width: 3rem;
-        border-radius: 5px;
-        -webkit-box-shadow: 0 2px #000000;
-        -moz-box-shadow: 0 2px 4px 0 #000000;
-        box-shadow: 0 2px 4px 0 #000000;
-      }
-      
-      #brand-name {
-        font-family: GothamPro-Bold;
-        font-size: 2.3rem;
-        padding-top: 1rem;          
-      }
-
-      #content {
-      }
-
-      #content p {
-        text-align: justify;
-      }
-
-      .email-form input {
-        padding: 1rem;
-        font-size: 1rem;
-      }
-
-      .email-form button {
-        padding: 1rem;
-        width: 150px;
-        font-weight: 400;
-      }
-
-      .btn-orange {
-        background-color: #F5A623;
-        border-color: #F5A623;
-        color: white
-      }
-
-      .iphone {
-        width: 90%;
-      }
-
-      .social-icons ul {
-        margin-top: 2rem;
-        width: 100%;
-        text-align: center;
-      }
-
-      .social-icons ul > li {
-        margin-left: 1rem;
-        margin-right: 1rem;
-        display: inline-block;
-      }
-
-      .social-icons ul > li > a {
-        display: inline-block;
-        color: white;
-        background-color: #4A90E2;
-        border-radius: 100%;
-        border: 2px solid white;
-        font-size: 2rem;
-        line-height: 4rem;
-        height: 4rem;
-        width: 4rem;
-      }
-
-      /* For sm */
-      @media all and (max-width: 576px) {
-        .iphone {
-          margin-top: 3rem;
-        }
-      }
-
-      /* For md */
-      @media all and (min-width: 768px) {
-        .iphone {
-          margin-top: -3rem;
-        }
-      }
-
-    </style>
   </head>
   <body>
     <div id="content" class="container">
@@ -144,30 +38,42 @@
           <div class="row mt-4">
             <div class="col-sm-12">
               <h1>Comming soon!</h1>
-              <p>
+              <p class="text-justify">
               Bạn cảm thấy mất thời gian và mệt mỏi khi phải "lăn lội" ra tiệm chụp hình? 
               </p>
-              <p>
+              <p class="text-justify">
                 Không cần lo lắng nữa, bởi giờ đã có chuphinhthe.com, sản phẩm công nghệ thông minh duy nhất tại thị trường Việt Nam giúp bạn sở hữu bức ảnh chất lượng trong tay ngay lập tức.
               </p>
-              <p>
+              <p class="text-justify">
                 <strong>
 Bạn chỉ cần cầm smartphone tạo kiểu, gửi hình và địa chỉ cho chuphinhthe.com, chúng tôi sẽ ship ngay ảnh chất đến tận nhà bạn. 
                 </strong>
               </p>
 
-              <p>
+              <p class="text-justify">
 "Cốc, cốc" - chuphinhthe.com đang gõ cửa để trao quà, cho bọn mình xin mail để gửi quà về đúng địa chỉ nhé!
               </p>
 
-              <form>
+              <form id="email-form" class="">
                 <div class="input-group email-form">
-                  <input type="email" class="form-control" placeholder="Nhập email" aria-label="Enter email..." aria-describedby="basic-addon">
+                  <input id="email" type="email" name="email" class="form-control" placeholder="Nhập email" />
                   <div class="input-group-append">
-                    <button class="btn btn-orange" type="button">Gửi</button> 
+                    <button class="btn btn-orange" type="submit">Gửi</button> 
                   </div>
                 </div>
               </form>
+
+              <div id="loader" class="col-sm-12 text-center d-none">
+                <i class="fa fa-spinner fa-spin" style="font-size:40px"></i>
+              </div>
+
+              <div id="thanks-form" class="d-none">
+                <h4 class="text-justify">Cảm ơn bạn!</h4>
+                <h4 class="text-justify">
+                  Hộp quà sẽ nhanh chóng được trao đúng địa chỉ nhà bạn nhé! Chúc bạn một ngày tốt lành!
+                </h4>
+              </div>
+
             </div>
           </div>
           <div class="row">
@@ -215,5 +121,22 @@ Bạn chỉ cần cầm smartphone tạo kiểu, gửi hình và địa chỉ ch
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/bluebird/3.5.0/bluebird.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyADeMZZPsGZPCtLOC2m3S7NsShNfrGsM_Y",
+        authDomain: "chuphinhthecom.firebaseapp.com",
+        databaseURL: "https://chuphinhthecom.firebaseio.com",
+        projectId: "chuphinhthecom",
+        storageBucket: "chuphinhthecom.appspot.com",
+        messagingSenderId: "487189525505"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script src="js/custom.js"></script>
   </body>
 </html>

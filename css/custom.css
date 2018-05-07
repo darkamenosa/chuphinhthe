@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'GothamPro';
+  src: url('../fonts/GothamPro/GothamPro.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/GothamPro/GothamPro.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/GothamPro/GothamPro.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/GothamPro/GothamPro.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/GothamPro/GothamPro.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'GothamPro-Bold';
+  src: url('../fonts/GothamPro-Bold/GothamPro-Bold.eot') format('opentype');
+  src: url('../fonts/GothamPro-Bold/GothamPro-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/GothamPro-Bold/GothamPro-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/GothamPro-Bold/GothamPro-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/GothamPro-Bold/GothamPro-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'GothamPro-Medium';
+  src: url('../fonts/GothamPro-Medium/GothamPro-Medium.eot') format('opentype');
+  src: url('../fonts/GothamPro-Medium/GothamPro-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/GothamPro-Medium/GothamPro-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/GothamPro-Medium/GothamPro-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/GothamPro-Medium/GothamPro-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+body {
+  background-color: #4a90e2;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.icon {
+  width: 3rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px #000000;
+  -moz-box-shadow: 0 2px 4px 0 #000000;
+  box-shadow: 0 2px 4px 0 #000000;
+}
+
+#brand-name {
+  font-family: GothamPro-Bold;
+  font-size: 2.3rem;
+  padding-top: 1rem;
+}
+
+#content {
+}
+
+.email-form input {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.email-form button {
+  padding: 1rem;
+  width: 150px;
+  font-weight: 400;
+}
+
+.btn-orange {
+  background-color: #f5a623;
+  border-color: #f5a623;
+  color: white;
+}
+
+.iphone {
+  width: 90%;
+}
+
+.social-icons ul {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.social-icons ul > li {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.social-icons ul > li > a {
+  display: inline-block;
+  color: white;
+  background-color: #4a90e2;
+  border-radius: 100%;
+  border: 2px solid white;
+  font-size: 2rem;
+  line-height: 4rem;
+  height: 4rem;
+  width: 4rem;
+}
+
+
+/* For sm */
+@media all and (max-width: 576px) {
+  .iphone {
+    margin-top: 3rem;
+  }
+}
+
+/* For md */
+@media all and (min-width: 768px) {
+  .iphone {
+    margin-top: -3rem;
+  }
+}

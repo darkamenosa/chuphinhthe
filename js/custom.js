@@ -12,7 +12,7 @@ $(document).ready(function() {
       return val;
     }
   }
-  
+
   // App methods
   // ---------------------------------
   
@@ -33,6 +33,7 @@ $(document).ready(function() {
   
   function saveEmail(email) { 
     return getEmailsRef()
+      .push()
       .set({
         email: email
       });

@@ -53,6 +53,10 @@ $(document).ready(function() {
     console.log('hide loader running')
   }
 
+  function completeRegistration() {
+    fbq('track', 'CompleteRegistration');
+  }
+
   function handleEmailFormSubmit(event) {
     // Event form default action
     event.preventDefault();
@@ -65,6 +69,7 @@ $(document).ready(function() {
       .then(saveEmail)
       .then(sideEffectWrapper(hideLoader))
       .then(showThanks)
+      .then(completeRegistration)
   }
 
   /**

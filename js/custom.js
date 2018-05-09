@@ -35,7 +35,8 @@ $(document).ready(function() {
     return getEmailsRef()
       .push()
       .set({
-        email: email
+        email: email,
+        createdDate: new Date()
       });
   }
 

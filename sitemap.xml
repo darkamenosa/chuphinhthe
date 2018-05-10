@@ -4,22 +4,4 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <url>
-    <loc>http://chuphinhthe.com/cdn-cgi/l/email-protection</loc>
-    <changefreq>Monthly</changefreq>
-    <priority>1</priority>
-    <lastmod>2018-05-08T08:15:22Z</lastmod>
-  </url>
-  <url>
-    <loc>http://chuphinhthe.com/cdn-cgi/l/</loc>
-    <changefreq>Monthly</changefreq>
-    <priority>1</priority>
-    <lastmod>2018-05-08T08:15:22Z</lastmod>
-  </url>
-  <url>
-    <loc>http://chuphinhthe.com/</loc>
-    <changefreq>Monthly</changefreq>
-    <priority>1</priority>
-    <lastmod>2018-05-08T08:15:22Z</lastmod>
-  </url>
 </urlset>

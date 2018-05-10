@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: http://chuphinhthe.com/sitemap.xml
+Sitemap: https://chuphinhthe.com/sitemap.xml

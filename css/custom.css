@@ -48,6 +48,7 @@ body {
 }
 
 #content {
+  padding-top: 2rem;
 }
 
 .email-form input {

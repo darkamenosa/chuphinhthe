@@ -45,13 +45,11 @@ $(document).ready(function() {
   }
 
   function showLoader() {
-    console.log('show loader running')
     $('#loader').removeClass('d-none');
   } 
 
   function hideLoader() {
     $('#loader').addClass('d-none');
-    console.log('hide loader running')
   }
 
   function completeRegistration() {

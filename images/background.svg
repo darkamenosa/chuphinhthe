@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="1024px" viewBox="0 0 1440 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Background</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="97.9046243%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#24D3FD" offset="0%"></stop>
+            <stop stop-color="#3C4CD2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Landing-Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Background" fill="url(#linearGradient-1)">
+            <path d="M1440,669.281488 C1348.57346,699.484369 1329.4601,787.207035 1269.57071,792.44667 C1142.38768,803.573729 1088.79377,694.830789 1018.81239,700.953357 C894.468173,711.832052 916.018447,823.378443 820.630724,831.723776 C701.291276,842.164611 712.994494,727.70892 593.243411,738.185768 C479.586091,748.129482 491.664595,860.504544 400.884241,868.446785 C293.087336,877.87778 293.723937,764.390291 154.267491,776.591133 C73.4533198,783.661447 38.0324042,840.242899 7.94180885e-07,889.929743 L0,0 L1440,0 L1440,669.281488 Z"></path>
+        </g>
+    </g>
+</svg>

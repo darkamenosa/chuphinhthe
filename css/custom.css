@@ -139,6 +139,16 @@ body {
 }
 
 
+
+/* Custom css */
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .headline-text__upper {
+    font-size: 1.4rem;
+  }
+}
+
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .headline-background {

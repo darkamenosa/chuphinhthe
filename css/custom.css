@@ -142,9 +142,15 @@ body {
 
 /* Custom css */
 
-@media (max-width: 374px) {
+@media (max-width: 400px) {
   .headline-text__upper {
     font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 500px) {
+  .headline-text__upper {
+    font-size: 1.5rem;
   }
 }
 

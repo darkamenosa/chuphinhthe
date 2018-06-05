@@ -142,13 +142,13 @@ body {
 
 /* Custom css */
 
-@media (min-width: 300px) and (max-width: 360px) {
+@media (max-width: 374px) {
   .headline-text__upper {
     font-size: 1.4rem;
   }
 }
 
-@media (min-width: 300px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .footer {
     text-align: center;
   }

@@ -142,9 +142,15 @@ body {
 
 /* Custom css */
 
-@media (min-width: 320px) and (max-width: 374px) {
+@media (min-width: 300px) and (max-width: 360px) {
   .headline-text__upper {
     font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .footer {
+    text-align: center;
   }
 }
 

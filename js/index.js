@@ -10,6 +10,7 @@ $(document).ready(function() {
     }
 
     function onActionBtnClicked(event) { 
+      fbq('track', 'ViewContent', { action: 'ViewDownloadApp'});
       window.location.href = "http://dangky.chuphinhthe.com"; 
     }
 
